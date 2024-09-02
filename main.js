@@ -14,9 +14,9 @@ import {
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyDdr0fxnYpfeG2b6GlTQ_-4TqpmGk2uvOk",
-  authDomain: "insan-cemerlang-afd2f.firebaseapp.com",
-  projectId: "insan-cemerlang-afd2f",
-  storageBucket: "insan-cemerlang-afd2f.appspot.com",
+  authDomain: "insan-cemerlang-80713.firebaseapp.com",
+  projectId: "insan-cemerlang-80713",
+  storageBucket: "insan-cemerlang-80713.appspot.com",
   messagingSenderId: "1016858047753",
   appId: "1:1016858047753:web:0534dda2085c2adab68fd8",
   measurementId: "G-E7G0K9XTCD"
