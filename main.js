@@ -10,8 +10,9 @@ import {
   updateDoc,
   query,
   orderBy
-} from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js'
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+} from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js'
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyDdr0fxnYpfeG2b6GlTQ_-4TqpmGk2uvOk",
   authDomain: "insan-cemerlang-80713.firebaseapp.com",
