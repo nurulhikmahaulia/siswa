@@ -35,8 +35,8 @@ export async function ambilDaftarSiswa() {
   cuplikanKueri.forEach((dokumen) => {
     hasilKueri.push({
       id: dokumen.id,
-      nama: dokumen.data().nama,
-      alamat: dokumen.data().alamat
+      nama: dokumen.data().Nama,
+      alamat: dokumen.data().Alamat
     })
   })
   
