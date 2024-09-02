@@ -10,24 +10,24 @@ import {
   updateDoc,
   query,
   orderBy
-  } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js'
-
+} from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js'
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCgSS-chZUH5T47nhRNeK6jYDnGZK_TQSA",
-  authDomain: "insan-cemerlang-d6eb1.firebaseapp.com",
-  projectId: "insan-cemerlang-d6eb1",
-  storageBucket: "insan-cemerlang-d6eb1.appspot.com",
-  messagingSenderId: "162904381844",
-  appId: "1:162904381844:web:dd88782fdcc494c9ac1781",
-  measurementId: "G-1RSX6TCWZ2"
+  apiKey: "AIzaSyDGYnq4VKq-YGu4RbfoI_ZHez9fishYjZo",
+  authDomain: "insan-cemerlang-afd2f.firebaseapp.com",
+  projectId: "insan-cemerlang-afd2f",
+  storageBucket: "insan-cemerlang-afd2f.appspot.com",
+  messagingSenderId: "686649580589",
+  appId: "1:686649580589:web:61374bbbd68adb604eaca4",
+  measurementId: "G-LNZTQBCE26"
 };
 
-// Inisialisasi Firebase
+//inisialisasi firebase
 const aplikasi = initializeApp(firebaseConfig)
 const basisdata = getFirestore(aplikasi)
 
 export async function ambilDaftarSiswa() {
-  const refDokumen = collection(basisdata, "siswa");
+  const refDokumen = collection(basisdata, "Siswa");
   const kueri = query(refDokumen, orderBy("nama"));
   const cuplikanKueri = await getDocs(kueri);
   
