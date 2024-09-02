@@ -32,7 +32,7 @@
     
     $(document).ready(async function() {
       let elemenDaftarSiswa = $("#daftar-siswa > tbody");
-      let daftarsiswa = await ambilDaftarSiswa(); 
+      let daftarSiswa = await ambilDaftarSiswa(); 
       
       daftarSiswa.forEach((data) => {
         elemenDaftarSiswa.append(
