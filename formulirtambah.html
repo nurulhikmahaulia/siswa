@@ -33,12 +33,14 @@
      import { tambahSiswa } from "./main.js"; 
      
              $(document).ready(async function() {
+               // ketika tombol tambah di pencet
+               $("#tombolsimpan").click(async function (event) {event.preventDefault();
+               
                // ambil data dari formulir 
                let Nama = $("#inputnama").val()
                let Alamat = $("#inputalamat").val()
                
-               // ketika tombol tambah di pencet
-               $("#tombolsimpan").click(async function() {
+                 
                  await tambahSiswa(Nama, Alamat)
                  window,location,href = "index.html"
                }
