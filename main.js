@@ -1,4 +1,5 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js'
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js'
+
 import { 
   getFirestore,
   collection,
@@ -10,7 +11,7 @@ import {
   updateDoc,
   query,
   orderBy
-} from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js'
+} from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
 
 
 const firebaseConfig = {
@@ -28,16 +29,16 @@ const aplikasi = initializeApp(firebaseConfig)
 const basisdata = getFirestore(aplikasi)
 
 export async function ambilDaftarSiswa() {
-  const refDokumen = collection(basisdata, "Siswa");
-  const kueri = query(refDokumen, orderBy("nama"));
+  const refDokumen = collection(basisdata, "siswa");
+  const kueri = query(refDokumen, orderBy("Nama"));
   const cuplikanKueri = await getDocs(kueri);
   
   let hasilKueri = [];
   cuplikanKueri.forEach((dokumen) => {
     hasilKueri.push({
       id: dokumen.id,
-      nama: dokumen.data().nama,
-      alamat: dokumen.data().alamat
+      Nama: dokumen.data().Nama,
+      Alamat: dokumen.data().Alamat
     })
   })
   
