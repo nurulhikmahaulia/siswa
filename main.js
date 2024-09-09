@@ -13,7 +13,6 @@ import {
   orderBy
 } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyDdr0fxnYpfeG2b6GlTQ_-4TqpmGk2uvOk",
   authDomain: "insan-cemerlang-80713.firebaseapp.com",
@@ -43,4 +42,20 @@ export async function ambilDaftarSiswa() {
   })
   
   return hasilKueri;
+}
+
+export async function tambahSiswa(Nama, Alamat) {
+  try {
+    // menyimpan data ke firebase
+    const refDokumen = await addDoc(collection(basisdata, "Siswa"), {
+    Nama: Nama, 
+    Alamat: Alamat
+    })
+    
+    // menampilkan pesan berhasil
+    console.log('berhasil menyimpan data siswa')
+  } catch (error) {
+    // menampilkan pesan gagal 
+    console.log('gagal menyimpan data siswa')
+  }
 }
