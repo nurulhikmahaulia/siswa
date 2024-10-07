@@ -41,7 +41,7 @@
                "<td>" + "</td>" +
                "<td>" + data.Nama + "</td>" +
                "<td>" + data.Alamat + "</td>" +
-               "<td>" + "<button class='btn btn-danger tombol-hapus' data='" +data.id + "'>hapus</button>"  + "</td>" +
+               "<td>" + "<a href='#' class='me-2 link-ubah' data='" + data.id + "'>ubah</a><button class='btn btn-danger tombol-hapus' data='" +data.id + "'>hapus</button> "  + "</td>" +
               "</tr>"
               )
           })
@@ -51,6 +51,10 @@
             location.reload() 
           })
           
+          
+          $('.link-ubah').click(async function() {
+            location.replace('formulirubah.html?id=' +$(this). attr('data'))
+          })
           
         })
         

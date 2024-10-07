@@ -41,10 +41,10 @@
       $("#tombolsimpan").click(async function(event) {
         event.preventDefault()
         
-        let nama = $("#inputnama").val()
-      let alamat = $("#inputalamat").val()
+        let Nama = $("#inputnama").val()
+      let Alamat = $("#inputalamat").val()
         
-        await tambahSiswa(nama,alamat)
+        await tambahSiswa(Nama,Alamat)
         window.location.href ="index.html"
       })
    })
